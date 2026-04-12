@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGTI 考古人格分析</title>
+    <link rel="stylesheet" href="/icon/iconfont.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- 公告弹窗 -->
+    <div id="announcement-modal" class="modal active">
+        <div class="modal-overlay"></div>
+        <div class="modal-card">
+            <div class="modal-icon">
+                <i class="iconfont icon-jurassic_radio"></i>
+            </div>
+            <h2 class="modal-title">公告</h2>
+            <div id="announcement-text" class="modal-content">
+                加载中...
+            </div>
+            <button id="btn-know" class="btn btn-primary btn-full">
+                知道了
+            </button>
+        </div>
+    </div>
+
+    <!-- 首页 -->
+    <section id="home" class="section">
+        <div class="container home-container">
+            <h1 class="main-title">KGTI</h1>
+            <h2 class="sub-title">考古人格分析</h2>
+            <p class="intro-text">回答32道趣味题目，发现你的考古人格</p>
+            <button id="btn-start" class="btn btn-accent btn-large">
+                <i class="iconfont icon-daochu1024-15"></i>
+                <span>开始测试</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- 答题区 -->
+    <section id="quiz" class="section">
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div class="container quiz-container">
+            <div class="quiz-header">
+                <span id="question-number" class="question-number">1/32</span>
+            </div>
+            <div id="question-text" class="question-text">
+                加载中...
+            </div>
+            <div id="options-container" class="options-container">
+                <!-- 选项按钮将在这里动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 结果页 -->
+    <section id="result" class="section">
+        <div class="container result-container">
+            <h2 class="result-title">你的考古人格是...</h2>
+            <div id="result-name" class="result-name">
+                <!-- 主人格名称 -->
+            </div>
+            <div id="result-nickname" class="result-nickname">
+                <!-- 昵称标签 -->
+            </div>
+            <div id="result-description" class="result-description">
+                <!-- 描述文字 -->
+            </div>
+            <div id="sub-tendency" class="sub-tendency" style="display: none;">
+                <span class="sub-tendency-label">辅倾向：</span>
+                <span id="sub-tendency-name" class="sub-tendency-tag"></span>
+            </div>
+            <div class="result-actions">
+                <button id="btn-restart" class="btn btn-accent">
+                    <i class="iconfont icon-fanhui"></i>
+                    <span>重新测试</span>
+                </button>
+                <button id="btn-gallery-from-result" class="btn btn-primary">
+                    查看人格图鉴
+                </button>
+            </div>
+            <p class="result-footer">结果仅供娱乐，请勿当真</p>
+        </div>
+    </section>
+
+    <!-- 人格图鉴页 -->
+    <section id="gallery" class="section">
+        <div class="container gallery-container">
+            <div class="gallery-header">
+                <button id="btn-back" class="btn btn-icon">
+                    <i class="iconfont icon-fanhui"></i>
+                </button>
+                <h2 class="gallery-title">人格图鉴</h2>
+            </div>
+            <div id="gallery-cards" class="gallery-cards">
+                <!-- 人格卡片将在这里动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
