@@ -46,8 +46,4 @@ KGTI-“考古人格分析”
 
 [https://kgti.doubt-fact.tech](https://kgti.doubt-fact.tech)
 
-## 支持我
-
-![https://www.doubt-fact.top/](https://www.doubt-fact.top/usr/uploads/2022/02/3193382672.png)
-
 顺颂时祺！
